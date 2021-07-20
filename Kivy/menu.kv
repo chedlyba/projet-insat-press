@@ -1,0 +1,47 @@
+
+<MyLayout>
+    id: my_menu
+    cur_folder: cur_folder
+
+    BoxLayout:
+        orientation: 'vertical'
+        size: root.width, root.height
+        BoxLayout: 
+            orientation: 'horizontal'
+            BoxLayout:
+                orientation: 'vertical'
+
+                Label:
+                    id: cur_folder
+
+                
+                FileChooserListView:
+                    id: file_chooser
+                    on_selection: my_menu.selected(filechooser.selection)
+                    size_hint: (0.5,1)
+                    path:'./'
+
+            BoxLayout:
+                orientation: 'vertical'
+
+                Image:
+                    id: image
+                    source: '' 
+
+                BoxLayout:
+                    orientation: 'horizontal'
+                    size_hint: (1,0.05)
+                    Button:
+                        text: 'Upload File'
+                        on_press: root.upload_file(filechooser.selection)
+                    
+                    Button:
+                        text: 'Upload Folder'
+                        on_press: root.upload_folder(filechooser.path)
+
+        
+            
+
+
+
+  
