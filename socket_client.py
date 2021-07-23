@@ -1,13 +1,10 @@
 from types import FrameType
 import key_client
 import socket
-import threading
-from Cryptodome.Cipher import AES
-from Cryptodome.Cipher import PKCS1_OAEP
-import os
-import signal
+from Crypto.Cipher import AES
+from Crypto.Cipher import PKCS1_OAEP
 import hashlib
-from Cryptodome.PublicKey import RSA
+from Crypto.PublicKey import RSA
 import ast
 
 FLAG_READY = 'ready'

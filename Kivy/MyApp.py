@@ -7,7 +7,7 @@ import os
 from kivy.uix.label import Label
 from kivy.uix.filechooser import FileChooserListView
 
-Builder.load_file('menu_copy.kv')
+Builder.load_file('menu.kv')
 
 class MyLayout(Widget) :
 

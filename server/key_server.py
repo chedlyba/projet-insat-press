@@ -1,6 +1,6 @@
-from Cryptodome.PublicKey import RSA
-from Cryptodome.Cipher import AES
-from Cryptodome import Random
+from Crypto.PublicKey import RSA
+from Crypto.Cipher import AES
+from Crypto import Random
 import hashlib
 import os
 

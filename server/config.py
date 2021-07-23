@@ -1,6 +1,6 @@
 server = {
-    'host' : '192.168.56.102',
-    'user' : 'nov',
+    'host' : '192.168.109.128',
+    'user' : 'chedly',
     'password' : '120100',
     'path' : '/home/nov/Downloads/'
 }
